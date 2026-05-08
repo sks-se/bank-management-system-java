@@ -28,7 +28,7 @@ public class Bank {
                 continue;
             }
 
-            Account acc = user1.accounts[acctype];
+            Account acc = user1.accounts[acctype-1];
 
             do {
                 System.out.println("\n1. Deposit\n2. Withdraw\n3. Check Balance\n-1. Back");
