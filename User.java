@@ -8,10 +8,9 @@ public class User {
         this.accounts= new Account[size];
     }
     User(){};
-
     void showAccount(){
-        for(Account acc: accounts){
-            System.out.println(acc.accountNumber +"-"+ acc.accountType);
-        }
-    }
+            for (int i = 0; i < accounts.length; i++) {
+                Account acc = accounts[i];
+                System.out.println( "[" + (i + 1) + "] " + acc.accountType + " Account | Acc No: " + acc.accountNumber);
+            }
 }
